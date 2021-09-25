@@ -3,6 +3,7 @@
 <meta charset="utf-8">
 <title>Сайт web-студії "Web-DECO"</title>
 <!-- ================= JAVASCRIPT ================================  -->
+<script src="js/clock1.js"></script>
 <script type="text/javascript">
 functiron send()
 { var valid = true;
@@ -24,7 +25,7 @@ functiron send()
   }
  }
  </script>
-  <!-- ============================================================================================== -->
+ <!-- ============================================================================================== -->
 <!-- ================= CSS Стили ================================= -->
 <style>
 .shadowtext {
@@ -32,6 +33,11 @@ text-shadow: 1px 3px 2px white, 0 0 1em red;
 color: #210042;
 font-size: 2em;
 }
+<script>
+ window.onload = function() {
+ setInterval(clockPainting, 1000); }
+ </script>
+ <!-- ============================================================================= -->
 </style>
 </HEAD>
 <BODY background="images/bg.jpg">
@@ -54,7 +60,8 @@ font-size: 2em;
 </td>
 </tr>
 <tr>
-<td width="30%" valign="top" >
+<td width="30%" valign="top">
+<center><canvas id="canvas" height="120" width="120"></canvas></center>
 <font size="5" color="navy"><h2>Новини</h2></font>
 <font size = "5" >
 <ul>
